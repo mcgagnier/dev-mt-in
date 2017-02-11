@@ -4,14 +4,30 @@
 <head>
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>DevMtin</title>
+	<title>DevMtn Social</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body ng-controller="mainCtrl">
-    <!-- {{test}} -->
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <!-- {{test}} -->
+    <h2 ng-show="view">
+        View Friends
+    </h2>
+    <h2 ng-show="find">
+        Find Friends
+    </h2>
+    <h2 ng-show="update">
+        Update Profile
+    </h2>
+
+    <div class="bottom-nav">
+        <div ng-click= "togglePage('view')">View Friends</div>
+        <div ng-click= "togglePage('find')">Find Friends</div>
+        <div ng-click= "togglePage('update')">Update Friends</div>
+
+    </div>
+
+
     <script src="app.js"></script>
     <script src="controller.js"></script>
     <script src="mainService.js"></script>
