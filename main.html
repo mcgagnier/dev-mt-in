@@ -1,0 +1,19 @@
+<!-- {{test}} -->
+
+<registration ng-if="register" on-save="onSave(user)"></registration>
+<h2 ng-show="view">
+    View Friends
+</h2>
+<h2 ng-show="find">
+    Find Friends
+</h2>
+<h2 ng-show="update">
+    Update Profile
+
+</h2>
+
+<div class="bottom-nav">
+    <div ng-class = "{selected:view}" ng-click= "togglePage('view')">View Friends</div>
+    <div ng-class = "{selected:find}" ng-click= "togglePage('find')">Find Friends</div>
+    <div  ng-class = "{selected:update}" ng-click= "togglePage('update')">Update Friends</div>
+</div>

@@ -1,0 +1,9 @@
+<p>Welcome to DevMountain Social</p>
+<p>Add Some Info So Friends Can Find You</p>
+<form>
+    <input type="text" placeholder="Name" ng-model='user.profileName'>
+    <input type="text" placeholder="Tagline" ng-model='user.profileTagline'>
+    <input type="text" placeholder="Image URL" ng-model='user.profileImage'>
+    <input type="text" placeholder="Bio" ng-model='user.profileBio'>
+    <button type="button" ng-click="$ctrl.onSave({user: user})">Save</button>
+</form>

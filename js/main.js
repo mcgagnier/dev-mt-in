@@ -1,8 +1,8 @@
-
-angular.module('social').controller('mainCtrl', function($scope) {
+function MainController($scope) {
     // $scope.test = "WORKING";
     var pages = ['view', 'find', 'update'];
     $scope.view = true;
+    $scope.register = true;
 
     $scope.togglePage = function (clickedNavView){
         pages.forEach(function(page){
@@ -14,4 +14,14 @@ angular.module('social').controller('mainCtrl', function($scope) {
         })
     }
 
+    $scope.onSave = function (value) {
+        console.log(value);
+        console.log('Here');
+        $scope.register = false;
+    }
+}
+
+angular.module('social').component('main', {
+    templateUrl: 'main.html',
+    controller: MainController
 });
