@@ -14,10 +14,16 @@
         <p>Welcome to DevMountain Social</p>
         <p>Add Some Info So Friends Can Find You</p>
         <div class="Full-name">Name</div>
+        <input type="text" name="" ng-model="user.name">
         <div class="Tagline">Tagline</div>
+        <input type="text" name="" ng-model="user.tagline">
+
         <div class="Profile Image URL">Image</div>
+        <input type="text" name="" ng-model="user.imageUrl">
+
         <div class="Bio">Bio</div>
-        <button type="button" name="SaveChanges">Save</button>
+        <textarea name="name" rows="8" cols="80" ng-model="user.bio"></textarea>
+        <button type="button" name="SaveChanges" ng-click="createUser(user)">Save</button>
 
 
         </div>
